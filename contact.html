@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Quinn Path</title>
+  <meta name="description" content="Contact Quinn Path — for reader enquiries, speaking engagements, retreat questions, or media requests.">
+  <meta name="keywords" content="Contact Quinn Path, speaking enquiries, retreat questions, meditation author contact">
+  <meta property="og:title" content="Contact — Quinn Path">
+  <meta property="og:description" content="For reader enquiries, speaking engagements, and retreat questions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Quinn <span>Path</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow">Enquiries</p>
+      <h1>Contact</h1>
+      <div class="divider" style="margin-top:1.25rem;"></div>
+    </div>
+  </div>
+
+  <!-- Contact Body -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info Column -->
+        <div class="reveal">
+          <p style="color:var(--text-secondary);margin-bottom:2.5rem;font-family:var(--font-serif);font-style:italic;font-size:1.1rem;line-height:1.7;">
+            Quinn welcomes correspondence from readers, event organisers, and fellow practitioners.
+          </p>
+
+          <h3>Readers</h3>
+          <p>
+            Questions about the books, responses to what you've read, or thoughts you'd
+            like to share. All genuine reader letters receive a reply in time.
+          </p>
+
+          <h3>Speaking Enquiries</h3>
+          <p>
+            Quinn is available for talks and conversations on consciousness, contemplative
+            practice, Buddhist scholarship, and the intersection of direct experience
+            with academic study. Please include event details and dates.
+          </p>
+
+          <h3>Retreat Questions</h3>
+          <p>
+            Questions about intensive retreat — preparation, finding a teacher, the
+            traditions described in <em>Forty-Three Days of Fire</em>, or related matters.
+          </p>
+
+          <h3>Media &amp; Press</h3>
+          <p>
+            Interview requests, review copies, and press enquiries. Please identify your
+            publication and intended focus.
+          </p>
+
+          <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+            <p style="font-size:0.85rem;color:var(--text-muted);font-style:italic;">
+              Quinn reads all correspondence personally. Please allow reasonable time
+              for a response, particularly following retreat periods.
+            </p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="reveal">
+          <form id="contact-form" novalidate>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <select class="form-control" id="subject" name="subject">
+                <option value="" disabled selected>Select a subject</option>
+                <option value="reader">Reader Enquiry</option>
+                <option value="speaking">Speaking Enquiry</option>
+                <option value="retreat">Retreat Question</option>
+                <option value="media">Media / Press</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Your message…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;">
+              Send Message
+            </button>
+
+            <p class="form-notice">
+              Your details are used only to respond to your enquiry and are not
+              shared with third parties.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__name">Quinn Path</div>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer__copy">&copy; <span id="yr"></span> Quinn Path. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

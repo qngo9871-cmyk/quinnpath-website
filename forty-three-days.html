@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forty-Three Days of Fire — Quinn Path</title>
+  <meta name="description" content="Forty-Three Days of Fire: A Journey Into The Hidden Universe — Quinn Path's account of an intensive retreat in Myanmar documenting the extraordinary capabilities of human consciousness.">
+  <meta name="keywords" content="Forty-Three Days of Fire, Quinn Path, Myanmar retreat, consciousness, Buddhist meditation, monastery, Theravada">
+  <meta property="og:title" content="Forty-Three Days of Fire — Quinn Path">
+  <meta property="og:description" content="A first-hand chronicle of an intensive retreat in Myanmar's ancient monastery tradition — and what it reveals about the hidden capabilities of consciousness.">
+  <meta property="og:type" content="book">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .ftdf-hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--nav-h) + 4rem) 0 5rem;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+    .ftdf-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.07) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ftdf-hero__inner {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .ftdf-title {
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      margin-bottom: 0.5rem;
+    }
+    .ftdf-subtitle {
+      font-family: var(--font-serif);
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: var(--gold);
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    .ftdf-hero__aside {
+      text-align: center;
+    }
+    .ftdf-book-graphic {
+      width: 200px;
+      height: 300px;
+      background: var(--bg-raised);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      padding: 2rem;
+      position: relative;
+    }
+    .ftdf-book-graphic::before {
+      content: '';
+      position: absolute;
+      inset: 8px -8px -8px 8px;
+      border: 1px solid var(--border);
+    }
+    .ftdf-book-graphic-text {
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    .rating-stars {
+      font-size: 1.3rem;
+      color: var(--gold);
+    }
+    .rating-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .chapter-list {
+      list-style: none;
+      counter-reset: chapters;
+    }
+    .chapter-list li {
+      counter-increment: chapters;
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .chapter-list li:last-child { border-bottom: none; }
+    .chapter-list li::before {
+      content: counter(chapters, decimal-leading-zero);
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--border-gold);
+      min-width: 2rem;
+      margin-top: 0.1em;
+    }
+    .chapter-info h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: var(--text-primary);
+    }
+    .chapter-info p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .monastery-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .monastery-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .monastery-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .excerpt-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      padding: 2.5rem 3rem;
+      margin: 3rem 0;
+    }
+    .excerpt-block p {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      font-style: italic;
+      margin-bottom: 1em;
+    }
+    .excerpt-block p:last-child { margin-bottom: 0; }
+    .excerpt-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .ftdf-hero__inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .ftdf-hero__aside {
+        order: -1;
+      }
+      .excerpt-block {
+        padding: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Quinn <span>Path</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="ftdf-hero">
+    <div class="container">
+      <div class="ftdf-hero__inner">
+        <div>
+          <p class="section-label">Quinn Path</p>
+          <h1 class="ftdf-title">Forty-Three<br>Days of Fire</h1>
+          <p class="ftdf-subtitle">A Journey Into The Hidden Universe</p>
+          <div class="divider"></div>
+          <p style="color:var(--text-secondary);max-width:520px;margin-bottom:2rem;">
+            A first-hand chronicle of an intensive retreat in Myanmar's ancient
+            monastery tradition — and what happens when sustained, disciplined
+            attention reveals the extraordinary capabilities of consciousness.
+          </p>
+          <div class="rating-row">
+            <span class="rating-stars">★★★★½</span>
+            <span class="rating-text">4.5 stars &nbsp;·&nbsp; 30 reviews</span>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+            <a href="#about-the-book" class="btn btn--outline">Read More</a>
+          </div>
+        </div>
+        <div class="ftdf-hero__aside">
+          <div class="ftdf-book-graphic">
+            <div class="ftdf-book-graphic-text">
+              Forty-Three<br>Days of Fire<br><br>
+              <span style="font-size:0.75rem;color:var(--gold-dim);">Quinn Path</span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+            <span class="format-tag">Kindle $8.99</span>
+            <span class="format-tag">Hardcover</span>
+            <span class="format-tag">Paperback</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Book -->
+  <section class="section" id="about-the-book">
+    <div class="container">
+      <div style="max-width:760px;">
+        <p class="section-label reveal">About the Book</p>
+        <h2 class="reveal" style="margin-bottom:1rem;">What Readers Will Discover</h2>
+        <div class="divider reveal"></div>
+
+        <div style="color:var(--text-secondary);margin-top:2rem;" class="reveal">
+          <p>
+            <em>Forty-Three Days of Fire</em> is not a book about getting comfortable.
+            It is a book about what becomes possible when a human being submits fully
+            to the most demanding conditions of contemplative training — and does not
+            look away from what they find there.
+          </p>
+          <p>
+            In forty-three consecutive days of intensive practice at a traditional
+            monastery in Myanmar, Quinn Path encountered states of consciousness
+            that the Pali Canon describes in precise technical language — and that
+            most Western practitioners encounter only as theoretical possibility.
+            He encountered them as fact.
+          </p>
+          <p>
+            This book documents that encounter: the conditions that gave rise to it,
+            the phenomenology of what was experienced, and the questions it leaves
+            permanently open about the nature of mind.
+          </p>
+        </div>
+
+        <div class="excerpt-block reveal">
+          <p class="excerpt-label">From the Book</p>
+          <p>
+            "By the thirty-first day, something had changed in the quality of attention
+            itself. It was no longer I who was attending to experience — or rather, the
+            distinction between the one who attends and the thing attended to had become
+            transparently artificial. What remained was a luminous, knowing quality
+            that seemed to have no edges."
+          </p>
+          <p>
+            "This is not what I expected to find. I had expected discipline, difficulty,
+            perhaps insight. I had not expected this — a mode of knowing so different
+            from ordinary consciousness that it challenges not just my assumptions,
+            but the assumptions embedded in the language I am using to describe it."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You'll Discover Grid -->
+  <section class="section--sm" style="background:var(--bg-secondary);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <p class="section-label text-center reveal">Inside the Book</p>
+      <h2 class="text-center reveal" style="margin-bottom:3rem;">Themes &amp; Discoveries</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;">
+
+        <div class="book-card reveal">
+          <h4 class="book-card__title" style="margin-bottom:0.75rem;">The Mechanics of Intense Retreat</h4>
+          <p class="book-card__desc">A clear-eyed account of the daily structure, physical demands, and psychological challenges of forty-three consecutive days of intensive practice.</p>
+        </div>
+
+        <div class="book-card reveal">
+          <h4 class="book-card__title" style="margin-bottom:0.75rem;">States Beyond Ordinary Awareness</h4>
+          <p class="book-card__desc">Detailed phenomenological descriptions of consciousness states rarely documented in Western literature — precisely correlated with classical Abhidhamma categories.</p>
+        </div>
+
+        <div class="book-card reveal">
+          <h4 class="book-card__title" style="margin-bottom:0.75rem;">The Scholar-Practitioner's View</h4>
+          <p class="book-card__desc">What happens when someone trained to think critically about Buddhist texts finds those texts describing something they are actually experiencing?</p>
+        </div>
+
+        <div class="book-card reveal">
+          <h4 class="book-card__title" style="margin-bottom:0.75rem;">The Question of Mind's Limits</h4>
+          <p class="book-card__desc">A serious, grounded examination of what these experiences imply — and do not imply — about the nature of consciousness and its potential.</p>
+        </div>
+
+        <div class="book-card reveal">
+          <h4 class="book-card__title" style="margin-bottom:0.75rem;">The Teacher-Student Relationship</h4>
+          <p class="book-card__desc">The role of traditional transmission in guiding a practitioner through territory that no book can fully prepare them for.</p>
+        </div>
+
+        <div class="book-card reveal">
+          <h4 class="book-card__title" style="margin-bottom:0.75rem;">Return to Ordinary Life</h4>
+          <p class="book-card__desc">What it means to return from extraordinary experience — and how the knowledge gained does and does not translate into daily living.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Myanmar Monasteries -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+        <div>
+          <p class="section-label reveal">Setting</p>
+          <h2 class="reveal" style="margin-bottom:1rem;">The Traditional Monasteries<br>of Myanmar</h2>
+          <div class="divider reveal"></div>
+          <div style="color:var(--text-secondary);margin-top:2rem;" class="reveal">
+            <p>
+              Myanmar (Burma) is home to one of the world's most intact living traditions
+              of intensive Theravada meditation practice. The forest monastery and city
+              monastery traditions that developed there over centuries have produced
+              some of the most rigorous and precisely documented meditation systems
+              in human history.
+            </p>
+            <p>
+              The Mahasi Sayadaw tradition, the Pa Auk Sayadaw tradition, and others
+              rooted in Myanmar have in recent decades become the primary vehicles
+              through which deep concentration practice — <em>samādhi</em> — has been
+              transmitted to practitioners from the West.
+            </p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="monastery-card">
+            <h4>The Forest Monastery Tradition</h4>
+            <p>
+              Rooted in the Vinaya — the monastic code — the forest monastery tradition
+              prioritises seclusion, simplicity, and the kind of uninterrupted practice
+              that allows deep states of concentration to mature over weeks and months.
+              These conditions are not merely traditional; they are functionally necessary.
+            </p>
+          </div>
+          <div class="monastery-card">
+            <h4>Samādhi: The Deep Concentrations</h4>
+            <p>
+              The Pali Canon describes eight distinct states of deep absorption —
+              the <em>jhānas</em> — each characterised by increasingly refined and
+              stable qualities of mind. Myanmar's traditions have preserved the
+              technical knowledge required to systematically develop these states.
+              It was in this context that Path's most significant experiences occurred.
+            </p>
+          </div>
+          <div class="monastery-card">
+            <h4>Living Transmission</h4>
+            <p>
+              What cannot be learned from books is learned in the presence of a teacher
+              who has walked the same ground. The living transmission lineages of Myanmar
+              remain among the most unbroken in the Theravada world — a fact that matters
+              enormously when the territory being navigated is consciousness itself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter Preview -->
+  <section class="section--sm" style="background:var(--bg-secondary);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <p class="section-label text-center reveal">Chapter Previews</p>
+      <h2 class="text-center reveal" style="margin-bottom:3rem;">Inside the Journey</h2>
+      <div style="max-width:700px;margin:0 auto;">
+        <ul class="chapter-list">
+          <li class="reveal">
+            <div class="chapter-info">
+              <h4>Arrival</h4>
+              <p>The monastery gate, the first silence, and the moment a Western mind begins its recalibration.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="chapter-info">
+              <h4>The Structure of Days</h4>
+              <p>Four in the morning until ten at night: what the schedule looks like, and what it is designed to accomplish.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="chapter-info">
+              <h4>The First Crisis</h4>
+              <p>Day seven. The mind that thought it was prepared discovers what preparation actually requires.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="chapter-info">
+              <h4>Access and Beyond</h4>
+              <p>The threshold states before deep absorption — and what they reveal about the architecture of attention.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="chapter-info">
+              <h4>The Hidden Universe</h4>
+              <p>Days twenty-eight through thirty-five: what the tradition has called the hidden universe, encountered directly.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="chapter-info">
+              <h4>Return</h4>
+              <p>What it means to leave. What travels back with you. What cannot be put down.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section--sm">
+    <div class="container text-center">
+      <h2 class="reveal" style="margin-bottom:1rem;">Begin the Journey</h2>
+      <p style="color:var(--text-secondary);max-width:460px;margin:0 auto 2.5rem;font-family:var(--font-serif);font-style:italic;" class="reveal">
+        Available in Kindle, Paperback, and Hardcover.
+      </p>
+      <div class="reveal">
+        <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+      </div>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:1.5rem;" class="reveal">
+        Kindle $8.99 &nbsp;·&nbsp; Paperback &nbsp;·&nbsp; Hardcover
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__name">Quinn Path</div>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer__copy">&copy; <span id="yr"></span> Quinn Path. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

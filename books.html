@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books — Quinn Path</title>
+  <meta name="description" content="Explore all four books by Quinn Path — from the intensive retreat chronicle Forty-Three Days of Fire to the accessible Morning Coffee daily practice guide.">
+  <meta name="keywords" content="Quinn Path books, meditation books, Buddhism, consciousness, mindfulness for surfers, morning coffee meditation">
+  <meta property="og:title" content="Books — Quinn Path">
+  <meta property="og:description" content="Four works on consciousness, meditation, and the contemplative life.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .book-full {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr;
+      gap: 4rem;
+      align-items: start;
+      padding: 3.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .book-full:last-child { border-bottom: none; }
+
+    .book-full__spine {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    .book-full__number {
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      color: var(--border);
+      font-style: italic;
+      line-height: 1;
+    }
+
+    .book-cover-placeholder {
+      width: 100%;
+      max-width: 200px;
+      aspect-ratio: 2/3;
+      background: var(--bg-raised);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .book-cover-placeholder span {
+      font-family: var(--font-serif);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .book-full__content h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+
+    .book-full__meta {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1.75rem;
+    }
+
+    .book-full__body {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 560px;
+    }
+    .book-full__body p { margin-bottom: 1em; }
+
+    .book-full__editions {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      max-width: 380px;
+    }
+
+    .book-full__editions h4 {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .edition-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .edition-row:last-child { border-bottom: none; }
+    .edition-row span:first-child {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .edition-row span:last-child {
+      font-size: 0.9rem;
+      color: var(--gold);
+      font-family: var(--font-serif);
+    }
+
+    .badge-chinese {
+      font-size: 0.7rem;
+      background: rgba(201,168,76,0.12);
+      color: var(--gold);
+      border: 1px solid var(--border-gold);
+      padding: 0.2rem 0.6rem;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 700px) {
+      .book-full {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .book-full__spine {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Quinn <span>Path</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow">Quinn Path</p>
+      <h1>Books</h1>
+      <div class="divider" style="margin-top:1.25rem;"></div>
+      <p style="color:var(--text-secondary);max-width:560px;margin-top:1.25rem;">
+        Four works drawn from four decades of practice — each a different lens on
+        the nature of mind, awareness, and the possibility of transformation.
+      </p>
+    </div>
+  </div>
+
+  <!-- Books List -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Book 1 -->
+      <div class="book-full reveal">
+        <div class="book-full__spine">
+          <div class="book-full__number">I</div>
+          <div class="book-cover-placeholder">
+            <span>Forty-Three Days of Fire</span>
+          </div>
+        </div>
+        <div class="book-full__content">
+          <h2>Forty-Three Days of Fire:<br>A Journey Into The Hidden Universe</h2>
+          <div class="book-full__meta">
+            <div>
+              <span style="color:var(--gold);font-size:1.1rem;">★★★★½</span>
+              <span style="color:var(--text-muted);font-size:0.85rem;margin-left:0.4rem;">30 reviews</span>
+            </div>
+          </div>
+          <div class="book-full__body">
+            <p>
+              An unflinching first-hand account of a forty-three day intensive retreat
+              in the ancient monastery tradition of Myanmar. In this remarkable chronicle,
+              Quinn Path documents what happens when a Western mind trained in Buddhist
+              scholarship is pushed to the outermost edges of concentrated meditation practice.
+            </p>
+            <p>
+              The result is a book unlike any other in contemporary contemplative literature —
+              neither romanticised nor sensationalised, but rigorously honest about the
+              extraordinary capabilities of consciousness that emerge under conditions
+              of sustained, disciplined attention.
+            </p>
+          </div>
+          <div class="book-full__editions">
+            <h4>Available Editions</h4>
+            <div class="edition-row">
+              <span>Kindle</span>
+              <span>$8.99</span>
+            </div>
+            <div class="edition-row">
+              <span>Paperback</span>
+              <span>Available</span>
+            </div>
+            <div class="edition-row">
+              <span>Hardcover</span>
+              <span>Available</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+            <a href="forty-three-days.html" class="btn btn--outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-full reveal">
+        <div class="book-full__spine">
+          <div class="book-full__number">II</div>
+          <div class="book-cover-placeholder">
+            <span>Between Sets</span>
+          </div>
+        </div>
+        <div class="book-full__content">
+          <h2>Between Sets:<br>A Mindfulness Practice for Surfers</h2>
+          <div class="book-full__meta">
+            <div class="format-tag" style="display:inline-block;">Mindfulness</div>
+          </div>
+          <div class="book-full__body">
+            <p>
+              Between the waves — in the pause, the stillness, the waiting — lies one
+              of the most natural entry points into meditative awareness available
+              to a modern person. <em>Between Sets</em> takes the ancient teachings of
+              mindfulness and reframes them through the lived language of surf culture.
+            </p>
+            <p>
+              Written for surfers who have already tasted something wordless in the water,
+              this book offers a structured path inward — using the ocean itself as both
+              metaphor and teacher. No prior experience with meditation required.
+            </p>
+          </div>
+          <div class="book-full__editions">
+            <h4>Available Editions</h4>
+            <div class="edition-row">
+              <span>Kindle</span>
+              <span>$3.99</span>
+            </div>
+            <div class="edition-row">
+              <span>Paperback</span>
+              <span>Available</span>
+            </div>
+          </div>
+          <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-full reveal">
+        <div class="book-full__spine">
+          <div class="book-full__number">III</div>
+          <div class="book-cover-placeholder">
+            <span>Learning to Pay Attention</span>
+          </div>
+        </div>
+        <div class="book-full__content">
+          <h2>Learning to Pay Attention:<br>A Short Introduction to Meditation</h2>
+          <div class="book-full__meta">
+            <div class="format-tag" style="display:inline-block;">Introduction</div>
+          </div>
+          <div class="book-full__body">
+            <p>
+              Meditation is not complicated. It is, however, easy to approach in ways
+              that make it feel that way. <em>Learning to Pay Attention</em> strips away
+              the confusion and offers something rare: a genuinely simple, genuinely
+              accurate introduction to what meditation actually is and how to do it.
+            </p>
+            <p>
+              Written by a practitioner with both scholarly grounding and decades of
+              personal experience, this short book is the ideal starting point for
+              anyone curious about the interior life.
+            </p>
+          </div>
+          <div class="book-full__editions">
+            <h4>Available Editions</h4>
+            <div class="edition-row">
+              <span>Kindle</span>
+              <span>$4.99</span>
+            </div>
+            <div class="edition-row">
+              <span>Paperback</span>
+              <span>Available</span>
+            </div>
+          </div>
+          <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="book-full reveal">
+        <div class="book-full__spine">
+          <div class="book-full__number">IV</div>
+          <div class="book-cover-placeholder">
+            <span>Morning Coffee</span>
+          </div>
+        </div>
+        <div class="book-full__content">
+          <h2>Morning Coffee: The Simple Daily Practice That Transforms Emotional Overwhelm into Spiritual Freedom</h2>
+          <div class="book-full__meta">
+            <div>
+              <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
+              <span style="color:var(--text-muted);font-size:0.85rem;margin-left:0.4rem;">1 review</span>
+            </div>
+            <span class="badge-chinese">Also in Chinese · 中文版</span>
+          </div>
+          <div class="book-full__body">
+            <p>
+              The contemplative life does not begin at a retreat centre. It begins
+              in the kitchen, in the first quiet moment of the morning, before the
+              day has demanded anything of you. <em>Morning Coffee</em> offers a single,
+              simple practice — rooted in decades of retreat experience — that anyone
+              can do, anywhere.
+            </p>
+            <p>
+              Translated into Chinese, this book has resonated across cultures as
+              a practical and profound guide to meeting emotional difficulty with
+              something larger than reactivity.
+            </p>
+          </div>
+          <div class="book-full__editions">
+            <h4>Available Editions</h4>
+            <div class="edition-row">
+              <span>Kindle</span>
+              <span>$8.99</span>
+            </div>
+            <div class="edition-row">
+              <span>Paperback</span>
+              <span>Available</span>
+            </div>
+            <div class="edition-row">
+              <span>Hardcover</span>
+              <span>Available</span>
+            </div>
+            <div class="edition-row">
+              <span>Chinese Edition (中文版)</span>
+              <span>Available</span>
+            </div>
+          </div>
+          <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Amazon CTA -->
+  <section class="section--sm" style="background:var(--bg-secondary);border-top:1px solid var(--border);">
+    <div class="container text-center">
+      <p style="font-family:var(--font-serif);font-size:1.2rem;color:var(--text-secondary);margin-bottom:1.5rem;font-style:italic;">
+        All books available through the Quinn Path Amazon author page.
+      </p>
+      <a href="https://www.amazon.com/author/quinnpath" target="_blank" rel="noopener" class="btn btn--gold">
+        Visit Author Page on Amazon
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__name">Quinn Path</div>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer__copy">&copy; <span id="yr"></span> Quinn Path. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

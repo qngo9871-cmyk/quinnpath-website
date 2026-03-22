@@ -204,7 +204,7 @@
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
   <script src="js/main.js"></script>
   <script>
-    // Redirect to excerpt page after MailerLite form submission
+    // Show excerpt link after MailerLite form submission
     (function() {
       var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(m) {
@@ -215,9 +215,10 @@
                 success = node;
               }
               if (success) {
-                setTimeout(function() {
-                  window.location.href = 'excerpt.html';
-                }, 1500);
+                success.innerHTML = '<div style="text-align:center;padding:2rem 0;">' +
+                  '<p style="font-family:Georgia,serif;font-size:1.3rem;color:#e8e0d0;margin-bottom:1.5rem;">Thank you for subscribing!</p>' +
+                  '<a href="excerpt.html" style="display:inline-block;padding:0.85rem 2rem;background:#c9a84c;color:#0d0d0d;font-weight:600;font-size:0.875rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Read the Free Excerpt Now</a>' +
+                  '</div>';
               }
             }
           });

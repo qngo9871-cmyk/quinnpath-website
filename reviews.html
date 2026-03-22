@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reader Reviews — Quinn Path</title>
+  <meta name="description" content="What readers are saying about Forty-Three Days of Fire by Quinn Path — Amazon reviews from readers around the world.">
+  <meta name="keywords" content="Quinn Path reviews, Forty-Three Days of Fire reviews, meditation book reviews, reader testimonials">
+  <meta property="og:title" content="Reader Reviews — Quinn Path">
+  <meta property="og:description" content="What readers around the world are saying about Forty-Three Days of Fire.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .review-card:hover {
+      border-color: var(--border-gold);
+    }
+    .review-card__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .review-card__stars {
+      font-size: 1.2rem;
+      color: var(--gold);
+    }
+    .review-card__title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+    .review-card__body p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1em;
+    }
+    .review-card__meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .review-card__author {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--text-primary);
+    }
+    .review-card__location {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .review-card__verified {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      border: 1px solid var(--border-gold);
+      padding: 0.2rem 0.6rem;
+    }
+    .review-card__quote {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      color: var(--border);
+      line-height: 1;
+    }
+    .editorial-card {
+      background: var(--bg-secondary);
+      border-left: 3px solid var(--gold);
+      padding: 2rem 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .editorial-card p {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      font-style: italic;
+      line-height: 1.8;
+    }
+    .rating-summary {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      margin-bottom: 4rem;
+    }
+    .rating-summary__score {
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .rating-summary__stars {
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    .rating-summary__text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    @media (max-width: 600px) {
+      .review-card { padding: 1.75rem; }
+      .review-card__quote { display: none; }
+      .editorial-card { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Quinn <span>Path</span></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow">Testimonials</p>
+      <h1>Reader Reviews</h1>
+      <div class="divider" style="margin-top:1.25rem;"></div>
+      <p style="color:var(--text-secondary);max-width:560px;margin-top:1.25rem;">
+        What readers around the world are saying about
+        <em>Forty-Three Days of Fire: A Journey Into The Hidden Universe</em>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Rating Summary -->
+  <section class="section">
+    <div class="container">
+
+      <div class="rating-summary reveal">
+        <div>
+          <div class="rating-summary__score">4.7</div>
+        </div>
+        <div>
+          <div class="rating-summary__stars">★★★★✦</div>
+          <div class="rating-summary__text">30 reviews on Amazon</div>
+        </div>
+        <div style="margin-left:auto;">
+          <a href="https://www.amazon.com/Forty-Three-Days-Fire-Journey-Universe-ebook/dp/B0FL7WWPM6/" target="_blank" rel="noopener" class="btn btn--outline" style="padding:0.6rem 1.5rem;">Read All Reviews on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Editorial Reviews -->
+      <p class="section-label reveal">Editorial Reviews</p>
+      <h2 class="reveal" style="margin-bottom:2rem;">Press &amp; Editorial</h2>
+
+      <div class="editorial-card reveal">
+        <p>"The stunning cover immediately draws you into the book's mysterious energy. The content is just powerful — immersive, thought-provoking, and beautifully written. Each page feels like a genuine journey into consciousness and human potential. A captivating, inspiring read that blends spirituality and discovery seamlessly."</p>
+      </div>
+
+      <div class="editorial-card reveal">
+        <p>"The diary's blow-by-blow account of nimitta visions, astral hops, and self-healing light shows is as riveting as it is unsettling — like watching someone crack open the universe in real time. The raw, day-by-day format pulls you in. For anyone serious about meditation's outer limits, it's an inspiring, if dizzying, roadmap — just keep your critical filters engaged while you ride the wave."</p>
+      </div>
+
+      <div style="margin-top:5rem;"></div>
+
+      <!-- Reader Reviews -->
+      <p class="section-label reveal">Amazon Reviews</p>
+      <h2 class="reveal" style="margin-bottom:2rem;">From Readers</h2>
+
+      <!-- Review 1 -->
+      <div class="review-card reveal">
+        <div class="review-card__quote">"</div>
+        <div class="review-card__header">
+          <div class="review-card__stars">★★★★★</div>
+          <span class="review-card__verified">Verified Purchase</span>
+        </div>
+        <h3 class="review-card__title">Raw, Real, and Radiant: A Meditation Memoir Like No Other</h3>
+        <div class="review-card__body">
+          <p>Forty-Three Days Of Fire is a rare gem — raw, poetic, and spiritually unflinching. This isn't just a meditation memoir; it's a visceral journey into the war within, where silence becomes a teacher and discomfort a doorway. The author writes with lyrical precision and emotional honesty, capturing the chaos, doubt, and breakthroughs of deep inner work. From geckos to temple bells, every detail pulses with meaning.</p>
+          <p>What sets this book apart is its courage: it doesn't romanticize awakening — it reveals it, layer by layer. If you've ever questioned your spiritual readiness or longed for a guide who speaks truth without pretense, this book delivers. A must-read for seekers, mystics, and anyone craving transformation that's as gritty as it is luminous.</p>
+        </div>
+        <div class="review-card__meta">
+          <div>
+            <div class="review-card__author">Amazon Kunde</div>
+            <div class="review-card__location">Reviewed in Germany &nbsp;·&nbsp; October 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card reveal">
+        <div class="review-card__quote">"</div>
+        <div class="review-card__header">
+          <div class="review-card__stars">★★★★★</div>
+          <span class="review-card__verified">Verified Purchase</span>
+        </div>
+        <h3 class="review-card__title">An Enlightening Journey</h3>
+        <div class="review-card__body">
+          <p>An extraordinary read beyond the limits of ordinary perception. A captivating read with a compelling and engaging vision, this book, through a diary-like story, projects us into the depths of consciousness through the eyes of a spiritual explorer who has decided to abandon all that is ordinary to journey into the incredible: meditative states, luminous events amid ancient Buddhist texts, and abilities that transcend the boundaries of logic and science.</p>
+        </div>
+        <div class="review-card__meta">
+          <div>
+            <div class="review-card__author">Alf Creativity</div>
+            <div class="review-card__location">Reviewed in Italy &nbsp;·&nbsp; November 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card reveal">
+        <div class="review-card__quote">"</div>
+        <div class="review-card__header">
+          <div class="review-card__stars">★★★★★</div>
+          <span class="review-card__verified">Verified Purchase</span>
+        </div>
+        <h3 class="review-card__title">Captivating and Honest</h3>
+        <div class="review-card__body">
+          <p>A fascinating and deeply immersive read. The diary style pulls you right into the author's inner world, blending raw honesty with vivid spiritual experiences. It left me reflective, inspired, and genuinely moved. A powerful journey into consciousness that lingers long after finishing.</p>
+        </div>
+        <div class="review-card__meta">
+          <div>
+            <div class="review-card__author">Amazon Customer</div>
+            <div class="review-card__location">Reviewed in the United Kingdom &nbsp;·&nbsp; December 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card reveal">
+        <div class="review-card__quote">"</div>
+        <div class="review-card__header">
+          <div class="review-card__stars">★★★★★</div>
+          <span class="review-card__verified">Verified Purchase</span>
+        </div>
+        <h3 class="review-card__title">Mind, Matter &amp; Mystery</h3>
+        <div class="review-card__body">
+          <p>If you've ever pondered the connection between science and spirituality, or felt there's more to the world than what meets the eye, this book will speak directly to you. It's both a personal odyssey and a cosmic awakening, beautifully written, intellectually rich, and emotionally stirring.</p>
+          <p>A must-read for seekers, thinkers, and anyone ready to see the universe and themselves with new eyes.</p>
+        </div>
+        <div class="review-card__meta">
+          <div>
+            <div class="review-card__author">Margaret McKeon</div>
+            <div class="review-card__location">Reviewed in Australia &nbsp;·&nbsp; November 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="review-card reveal">
+        <div class="review-card__quote">"</div>
+        <div class="review-card__header">
+          <div class="review-card__stars">★★★★★</div>
+          <span class="review-card__verified">Verified Purchase</span>
+        </div>
+        <h3 class="review-card__title">Spiritual Journey</h3>
+        <div class="review-card__body">
+          <p>This book is a hidden gem, a spiritual diary that I really enjoyed. It explains the deeper stages of meditation so well that I never thought a book will ever do this. I do yoga and this book helped me a lot. I highly recommend this book.</p>
+        </div>
+        <div class="review-card__meta">
+          <div>
+            <div class="review-card__author">BookLover</div>
+            <div class="review-card__location">Reviewed in Canada &nbsp;·&nbsp; October 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="review-card reveal">
+        <div class="review-card__quote">"</div>
+        <div class="review-card__header">
+          <div class="review-card__stars">★★★★★</div>
+        </div>
+        <h3 class="review-card__title">43 Days</h3>
+        <div class="review-card__body">
+          <p>This is a very interesting book. 'When my teacher made the revolutionary decision to break centuries of tradition by teaching laypeople — sharing knowledge previously confined to monastic communities — he did so because he understood that such wisdom belongs to humanity, not to institutions. In that same spirit, I've decided to share these records… my journal.'</p>
+          <p>The retreat started as a struggle with basic concentration and gradually evolved 'into access to extraordinary states of consciousness that few humans ever experience… the recognition that what we are is far more extraordinary than what we've been taught to believe…'</p>
+          <p>From loving kindness through cleansing practices, extraordinary miracles, wonders of out of body experiences, holographic universe, celestial realms, superpowers, true nature of reality, visions from eternity… there is a lot to explore for us. And this book may be ends but starts a new life of transformation even for us: the ceremony is the "sharing of merits" — beautiful Buddhist tradition offering the spiritual benefits of this practice to all beings.</p>
+        </div>
+        <div class="review-card__meta">
+          <div>
+            <div class="review-card__author">Edith 6182</div>
+            <div class="review-card__location">Reviewed in the United States &nbsp;·&nbsp; March 2026</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section--sm" style="background:var(--bg-secondary);border-top:1px solid var(--border);">
+    <div class="container text-center">
+      <h2 class="reveal" style="margin-bottom:1rem;">Begin Your Own Journey</h2>
+      <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;font-style:italic;font-family:var(--font-serif);" class="reveal">
+        Available in Kindle, Paperback, and Hardcover.
+      </p>
+      <div class="reveal" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://www.amazon.com/Forty-Three-Days-Fire-Journey-Universe-ebook/dp/B0FL7WWPM6/" target="_blank" rel="noopener" class="btn btn--gold">Buy on Amazon</a>
+        <a href="read-free.html" class="btn btn--outline">Read Free Excerpt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__name">Quinn Path</div>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="forty-three-days.html">Forty-Three Days of Fire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer__copy">&copy; <span id="yr"></span> Quinn Path. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

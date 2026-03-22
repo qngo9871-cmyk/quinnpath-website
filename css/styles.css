@@ -685,6 +685,52 @@ select.form-control option {
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
 
+/* ---------- MailerLite Form Override ---------- */
+.ml-embedded {
+  background: transparent !important;
+}
+.ml-form-embedWrapper {
+  background: transparent !important;
+}
+.ml-form-embedBody {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  padding: 2rem !important;
+}
+.ml-form-embedBody .ml-form-embedContent h4,
+.ml-form-embedBody .ml-form-embedContent p {
+  color: var(--text-secondary) !important;
+}
+.ml-form-embedBody .ml-form-fieldRow input {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans) !important;
+}
+.ml-form-embedBody .ml-form-fieldRow input:focus {
+  border-color: var(--gold) !important;
+}
+.ml-form-embedBody .ml-form-fieldRow button,
+.ml-form-embedBody .ml-form-embedSubmit button {
+  background: var(--gold) !important;
+  color: #0d0d0d !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border: none !important;
+}
+.ml-form-embedBody .ml-form-fieldRow button:hover,
+.ml-form-embedBody .ml-form-embedSubmit button:hover {
+  background: var(--gold-light) !important;
+}
+.ml-form-successBody h4 {
+  color: var(--gold) !important;
+}
+.ml-form-successBody p {
+  color: var(--text-secondary) !important;
+}
+
 /* ---------- Page Transitions ---------- */
 body {
   animation: pageFadeIn 0.45s ease both;

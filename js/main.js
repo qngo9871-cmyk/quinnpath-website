@@ -75,26 +75,6 @@
   }
 
   /* ---------- Contact form ---------- */
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const orig = btn.textContent;
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
-
-      // Simulate send (replace with real endpoint as needed)
-      setTimeout(function () {
-        form.innerHTML = [
-          '<div class="diary-empty" style="border-style:solid;">',
-          '  <div class="diary-empty__icon">✦</div>',
-          '  <h3>Message Received</h3>',
-          '  <p>Thank you for reaching out. Quinn will be in touch in due course.</p>',
-          '</div>'
-        ].join('');
-      }, 900);
-    });
-  }
+  /* Form is handled by FormSubmit.co — no JS needed */
 
 })();
